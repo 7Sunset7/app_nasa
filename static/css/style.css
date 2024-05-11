@@ -1,0 +1,129 @@
+body {
+    letter-spacing: 0.02em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.custom-navbar {
+    letter-spacing: 0.05em;
+    background-color: #0A121E;
+}
+
+.custom-btn {
+    text-transform: uppercase;
+    background-color: #ff342b;
+    border-color: #ff342b;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.5px;
+    letter-spacing: 0.05em;
+    padding: 12px 18px;
+}
+
+.custom-title {
+    font-size: 56px;
+}
+
+.custom-img {
+    width: 457px;
+    height: 457px;
+    object-fit: cover;
+    border-radius: 40px;
+    box-shadow: 0px 12px 24px 0px #001d5633;
+}
+.custom-slider {
+    background-color: #3C3C3C;
+}
+/* Главная картинка в слайдере */
+.custom-img-gallery {
+    cursor: pointer;
+    width: 750px;
+    height: 420px;
+    border-radius: 40px;
+    box-shadow: 0px 20px 50px 0px #00000080;
+    overflow: hidden;
+    position: relative;
+}
+
+.custom-img-gallery img {
+    object-fit: cover;
+}
+
+.custom-img-gallery .slick-list,
+.custom-img-gallery .slick-slide {
+    height: 420px !important;
+}
+
+/* Миниатюры в слайдере */
+.slider-nav .custom-img-thumbnail {
+    cursor: pointer;
+    width: 165px;
+    height: 165px;
+    margin: 50px auto;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+.slider-nav .is-active .custom-img-thumbnail {
+    border: 1px solid #fff;
+}
+
+.slider-nav .slick-prev {
+    left: -45px;
+}
+
+.slick-prev::before {
+    content: url("/static/prev.png") !important;
+}
+
+.slick-next::before {
+    content: url("/static/next.png") !important;
+}
+
+.slick-lightbox .slick-prev {
+    z-index: 9999999;
+}
+
+.slick-lightbox .slick-next {
+    right: 35px !important;
+}
+
+/* Медиа запросы */
+
+@media screen and (max-width: 1020px) {
+
+    .custom-img-gallery {
+        width: 600px;
+        height: 420px;
+    }
+    .slider-nav .custom-img-thumbnail {
+        border-radius: 20px;
+        width: 120px;
+        height: 120px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .custom-img-gallery {
+        width: 380px;
+        height: 380px;
+    }
+    .slider-nav .custom-img-thumbnail {
+        border-radius: 20px;
+        width: 80px;
+        height: 80px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .custom-title {
+        font-size: 36px;
+    }
+    .custom-img {
+        width: 340px;
+        height: 340px;
+    }
+    .custom-img-gallery {
+        width: 100%;
+        height: 340px;
+    }
+
+}

@@ -1,0 +1,4 @@
+Django==4.1
+django_admin_sortable2==2.1.10
+django_filer==3.1.1
+python-dotenv==1.0.1
