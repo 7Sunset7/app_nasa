@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "ru-ru"
 
 TIME_ZONE = "UTC"
 
@@ -140,3 +140,11 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+THUMBNAIL_ALIASES = {
+    '': {
+        'my_preview_1': {'size': (80, 0), 'crop': True},
+        'my_preview_2': {'size': (750, 420), 'crop': True},
+        'my_preview_3': {'size': (165, 165), 'crop': True},
+    },
+}

@@ -1,4 +1,5 @@
 {% load static %}
+{% load thumbnail %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -102,7 +103,7 @@
         <h2 class="text-center text-light py-5 fw-bold">Фотографии</h2>
         <div class="slider-for mb-2 mx-auto custom-img-gallery">
             {% for photo in photos %}
-            <img src="{{ photo.image.url }}" class="custom-img-gallery ">
+            <img src="{{ photo.image|thumbnail_url:'my_preview_2' }}" class="custom-img-gallery ">
             {% endfor %}
         </div>
 
@@ -110,7 +111,7 @@
         <div class="slider-nav">
             {% for photo in photos %}
             <div>
-                <img src="{{ photo.image.url }}" class="custom-img-thumbnail">
+                <img src="{{ photo.image|thumbnail_url:'my_preview_3'}}" class="custom-img-thumbnail">
             </div>
             {% endfor %}
 

@@ -57,11 +57,8 @@ body {
 /* Миниатюры в слайдере */
 .slider-nav .custom-img-thumbnail {
     cursor: pointer;
-    width: 165px;
-    height: 165px;
     margin: 50px auto;
     border-radius: 40px;
-    object-fit: cover;
 }
 
 .slider-nav .is-active .custom-img-thumbnail {
